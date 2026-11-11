@@ -85,6 +85,7 @@ def inference(text):
 
     # Entering the attention block
     # need to create the individual attention heads for multi-headed attention.
+    # add batch training next
     for j in range(B):
         Q = x @ Wq
         K = x @ Wk
@@ -151,11 +152,6 @@ def inference(text):
     # sample from the softmaxes and output the next token.
     # now it's time to understand batch training
 
-    # for now ill just implement greedy decoding 
-
-
-
-
-
+    # for now ill just implement greedy decoding
 
     return x
